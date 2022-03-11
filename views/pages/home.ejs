@@ -1,0 +1,66 @@
+<section class="hero h-auto w-full ">
+    <div class="slider owl-carousel owl-theme">
+        <% for(let i=0; i < 6; i++){ %>
+            <div class="item slide">
+                <div class="content">
+                    <img src="/img/sliders/s<%= i %>.png" class="h-full w-full object-cover" alt="slider image 1">
+                </div>
+            </div>
+            <% } %>
+    </div>
+</section>
+<section class="about md:py-20 py-5 md:px-10 px-5">
+    <div class="wrapper">
+        <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores sequi tempora consequuntur
+            quos provident iusto aperiam dolorem aliquam? Earum alias, nulla dolorem porro tempora, deserunt minima quo
+            facere asperiores laudantium impedit, quos adipisci deleniti possimus et assumenda dolores libero
+            consequuntur ducimus consequatur eum vitae beatae. Nam similique aut voluptates, amet, quia aliquam minima
+            itaque ea earum voluptatum ratione iure nobis, autem eos nostrum maxime aperiam quidem illo harum eum error
+            commodi! Molestiae, cupiditate voluptate libero magni ipsa fugit vel eius minus sequi modi tempora error
+            sunt accusamus fuga maiores ratione doloremque reiciendis possimus architecto illum fugiat neque? Molestias
+            beatae ex unde aliquam quia commodi, maxime illo exercitationem placeat praesentium ipsa atque maiores
+            magnam quo. Labore hic tenetur quisquam vel atque ex deleniti enim officia dolorum doloribus voluptates,
+            consequatur consequuntur, iure voluptatem sint doloremque. Itaque doloribus ipsam, dicta sunt assumenda, non
+            tempore at distinctio tenetur dolores nam expedita beatae dolor in accusantium quibusdam, quasi consequatur
+            dolorem asperiores numquam vitae soluta repellendus fuga? Eum qui quae enim mollitia illum provident ea
+            sint, cupiditate, adipisci, quis minima amet necessitatibus quam nam consectetur voluptatem ratione commodi
+            sapiente facilis distinctio molestias veritatis tenetur! Officiis consectetur iste vel. Exercitationem
+            eligendi recusandae quas, natus nobis maxime nulla!</p>
+    </div>
+</section>
+<section class="md:p-10 p-5 bg-gray-50">
+    <div class="heading w-full text-center  mb-5">
+        <h1 class="md:text-4xl text-2xl uppercase font-bold tsecondary">categories</h1>
+    </div>
+    <div class="cards w-full py-5 grid  lg:grid-cols-4 md:grid-cols-3 grid-cols-2">
+        <% for(let i=0; i < 8 ; i++){ %>
+            <%- include("../components/card", {name: "category name here" }) %>
+                <% } %>
+    </div>
+    <a href="/category" class="btn mt-5 mx-auto">more categories</a>
+</section>
+<section class="extra-section my-10">
+    <div class="flex items-center md:p-10 p-5 h-[400px] w-full">
+        <div class="text-wrapper md:w-1/2 h-full flex items-center justify-center">
+            <div>
+                <div class="heading">
+                    <h1 class="text-4xl tsecondary font-bold">Who We Are?</h1>
+                </div>
+                <p class="para mt-4 mr-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eveniet error delectus nemo illo
+                    dignissimos iure architecto quos aspernatur deserunt vero ut, inventore voluptatibus impedit ullam
+                    eos, magni voluptatem mollitia quam nostrum odit nisi,
+                    <br><br>
+                    neque consectetur. Autem, quas veniam numquam, nisi esse nam officiis voluptatem, amet earum beatae
+                    facilis corrupti?
+                </p>
+                <a href="/" class="btn mt-4">read
+                    more</a>
+            </div>
+        </div>
+        <div class="img-wrapper md:w-1/2 h-full md:block hidden">
+            <img src="/img/background/b1.jpg" class="w-full h-full object-cover" alt="section background image">
+        </div>
+    </div>
+
+</section>

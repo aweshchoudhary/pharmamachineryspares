@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+
+* {
+  transition: 0.4s all ease-in-out;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.products-category .wrapper .cards-container {
+  width: calc(100vw - 300px);
+}
+
+:root {
+  --primary: #d23e00;
+  --secondary: #5d2706;
+}
+
+.bprimary {
+  background: var(--primary);
+}
+.bsecondary {
+  background: var(--secondary);
+}
+.tprimary {
+  color: var(--primary);
+}
+.tsecondary {
+  color: var(--secondary);
+}
+
+.border-primary {
+  border-color: var(--secondary);
+}
+
+.btn {
+  @apply uppercase px-10 py-2 block w-fit border-2 rounded-full bg-none border-primary tsecondary font-semibold hover:text-white;
+}
+.btn2 {
+  @apply uppercase px-10 py-2 block w-fit border-2 rounded-full bsecondary border-primary font-semibold cursor-pointer text-white;
+}
+.nav-item {
+  @apply mx-2 px-3 py-2 rounded-md font-semibold;
+}
+.btn:hover {
+  background: var(--secondary);
+}
+.nav-item:hover {
+  background: var(--secondary);
+}
+.page-header {
+  background: url("https://source.unsplash.com/random/?business");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.category-card:hover .top .img img {
+  transform: scale(1.1);
+}
+
+.owl-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.owl-nav button {
+  height: auto;
+  padding: 10px 0;
+}
+.cards-wrapper {
+  height: calc(100vh - 100px);
+}
+@media screen and (max-width: 768px) {
+}
+@tailwind utilities;

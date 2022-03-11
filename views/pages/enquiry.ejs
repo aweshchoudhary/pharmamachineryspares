@@ -1,0 +1,27 @@
+<%- include("../components/pageheader", {heading: "enquiry" }) %>
+    <section class="enquiry-section h-full md:py-10 py-5 bg-gray-50 w-full flex items-center justify-center">
+        <div class="bg-white md:p-10 p-5 md:w-1/2 rounded-2xl">
+            <div class="text-container md:mb-10 mb-5">
+                <h1 class="md:text-5xl text-3xl font-semibold capitalize tsecondary text-center">
+                    Enter your details to send us a message
+                </h1>
+            </div>
+            <form action="/enquiry">
+                <div class="full-name w-full border my-3 p-3">
+                    <input type="text" name="full-name" placeholder="enter your full name"
+                        class="outline-none w-full placeholder:capitalize">
+                </div>
+                <div class="email w-full border my-3 p-3">
+                    <input type="email" name="email" placeholder="enter your emai"
+                        class="outline-none w-full placeholder:capitalize">
+                </div>
+                <div class="password w-full border my-3 p-3">
+                    <textarea name="message" id="message" placeholder="Enter your message here"
+                        class="h-[200px] w-full placeholder:capitalize outline-none"></textarea>
+                </div>
+                <div class="buttons">
+                    <button type="submit" class="btn w-full text-center">submit</button>
+                </div>
+            </form>
+        </div>
+    </section>

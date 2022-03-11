@@ -1,0 +1,34 @@
+<header class="w-full relative">
+    <div class="top md:px-10 px-5 w-full flex items-center">
+        <div class="logo-wrapper h-auto w-[200px]">
+            <div class="logo">
+                <img src="/img/logo/logo.png" class="h-full w-full object-cover" alt="logo image">
+            </div>
+        </div>
+    </div>
+
+</header>
+<div data-nav-bar-bottom
+    class="nav-bar-bottom sticky z-50 top-0 left-0 w-full bprimary md:py-2 py-4 md:px-10 px-5 overflow-hidden"
+    style="height: 65px;">
+    <button data-nav-bar-btn class="nav-button md:hidden mb-5 p-2 border border-slate-300 w-fit rounded">
+        <span class="iconify text-lg text-white" data-icon="fa:bars"></span>
+    </button>
+    <div class="flex md:flex-row flex-col items-center">
+        <nav class="w-full h-full">
+            <ul
+                class="flex md:items-center items-start md:flex-row flex-col md:pb-0 pb-4 uppercase text-white font-semibold ">
+                <li class="nav-item block md:w-fit w-full"><a href="/">home</a></li>
+                <li class="nav-item block md:w-fit w-full"><a href="/about">about Us</a></li>
+                <li class="nav-item block md:w-fit w-full"><a href="/category">products</a></li>
+                <li class="nav-item block md:w-fit w-full"><a href="/contact">contact Us</a></li>
+                <li class="nav-item block md:w-fit w-full"><a href="/enquiry">enquiry</a></li>
+            </ul>
+        </nav>
+        <div class="search flex-grow-0 flex-shrink-0">
+            <input type="text" name="search"
+                class="placeholder:text-white md:w-auto w-full  outline-none text-white bg-transparent border p-2 rounded-md"
+                placeholder="Search anything">
+        </div>
+    </div>
+</div>

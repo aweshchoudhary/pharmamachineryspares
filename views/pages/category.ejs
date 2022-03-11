@@ -1,0 +1,31 @@
+<section class="products-category h-screen   flex items-start">
+    <div class="wrapper flex items-start justify-between h-full">
+        <div class="cards-container bg-gray-50 h-full">
+            <div class="heading w-full p-4 bg-white text-2xl uppercase font-bold tsecondary">
+                products, category name here
+            </div>
+            <div class="cards-wrapper flex flex-wrap w-full overflow-y-auto">
+                <% for(let i=0; i < 40 ; i++){ %>
+                    <%- include("../components/card2", {name: "category name here" }) %>
+                        <% } %>
+            </div>
+        </div>
+        <div class="sidebar w-[300px] h-screen p-5 border">
+            <div class="heading text-xl uppercase font-bold">
+                categories
+            </div>
+            <ul class="py-3 bg-white">
+                <li>
+                    <a href="/" class="font-bold uppercase">category name</a>
+                    <ul>
+                        <li><a href="/">item name here</a></li>
+                        <li><a href="/">item name here</a></li>
+                        <li><a href="/">item name here</a></li>
+                        <li><a href="/">item name here</a></li>
+                        <li><a href="/">item name here</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

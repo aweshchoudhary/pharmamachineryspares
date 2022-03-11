@@ -1,0 +1,27 @@
+<section class="md:p-10 p-5 flex items-center justify-center">
+    <form action="/upload-product" class="w-1/2" method="post" enctype="multipart/form-data">
+        <div class="title w-full border my-3 p-3">
+            <input type="text" name="title" placeholder="enter your title"
+                class="outline-none w-full placeholder:capitalize">
+        </div>
+        <div class="category w-full my-3">
+            <select name="category" class="w-full px-5 py-3 capitalize" id="category">
+                <option value="category">category</option>
+                <option value="category">category</option>
+                <option value="category">category</option>
+                <option value="category">category</option>
+            </select>
+        </div>
+        <div class="desc w-full border my-3 p-3">
+            <textarea name="desc" id="desc" placeholder="Enter your desc here"
+                class="h-[200px] w-full placeholder:capitalize outline-none"></textarea>
+        </div>
+        <div class="img w-full my-3 p-3">
+            <input type="file" name="img" class="hidden" id="img">
+            <label for="img" class="btn2">upload image</label>
+        </div>
+        <div class="buttons">
+            <button type="submit" class="btn w-full text-center">submit</button>
+        </div>
+    </form>
+</section>

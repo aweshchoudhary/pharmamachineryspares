@@ -1,0 +1,22 @@
+{
+  "name": "pharma-machinery-spares-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "\u001b[A\u001b[B",
+  "scripts": {
+    "start": "node ./server.js",
+    "build": "tailwindcss build ./public/css/input.css -o ./public/css/out.css",
+    "watch": "tailwindcss build ./public/css/input.css -o ./public/css/out.css -w",
+    "production": "tailwindcss build ./public/css/input.css -o ./public/css/out.css --minify"
+  },
+  "author": "pharma machinery spares",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^14.3.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-ejs-layouts": "^2.5.1",
+    "mongoose": "^6.2.5",
+    "multer": "^1.4.4"
+  }
+}
