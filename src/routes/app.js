@@ -23,10 +23,10 @@ router.get("/enquiry", (req, res) => {
 router.get("/upload", (req, res) => {
   res.render("pages/upload");
 });
-router.post("/upload-product", (req, res) => {
-  const { title, category, desc, img } = req.body;
-  console.log(title + " " + category + " " + desc);
-  res.redirect("/");
-});
+// router.post("/upload-product", (req, res) => {
+//   const { title, category, desc, img } = req.body;
+//   console.log(title + " " + category + " " + desc);
+//   res.redirect("/");
+// });
 
 module.exports = router;
